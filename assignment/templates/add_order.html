@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Order for {{ customer.name }}</title>
+</head>
+<body>
+    <h1>Add Order for {{ customer.name }}</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Add Order</button>
+    </form>
+</body>
+</html>

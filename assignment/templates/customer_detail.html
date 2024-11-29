@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Customer Detail</title>
+</head>
+<body>
+    <h1>{{ customer.name }}</h1>
+    <p>Email: {{ customer.email }}</p>
+    <h2>Orders</h2>
+    <ul>
+        {% for order in orders %}
+            <li>Order {{ order.id }}: {{ order.total_amount }} on {{ order.order_date }}</li>
+        {% endfor %}
+    </ul>
+    <a href="{% url 'add_order' customer.id %}">Add Order</a>
+</body>
+</html>
