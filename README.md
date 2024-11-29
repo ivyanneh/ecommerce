@@ -2,6 +2,7 @@
 
 ## Overview
 
+This project is for Question 1 of the CAT2.
 This project is a simple e-commerce system built using Django. It includes models for `Customer` and `Order` with a one-to-many relationship where each customer can place multiple orders. i have written a summary of what i did.
 
 ## Features
